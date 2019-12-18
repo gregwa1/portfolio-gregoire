@@ -23,7 +23,7 @@ class App extends React.Component {
       home: {
         title: "Software Engineer",
         subTitle: "The art of science",
-        smText: "Checkout my projects below"
+        text: "Checkout my projects below"
       },
       about: {
         title: "About Me"
