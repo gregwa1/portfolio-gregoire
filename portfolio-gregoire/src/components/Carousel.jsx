@@ -1,48 +1,45 @@
-import React, { Component } from 'react';
-import beer_just_beer from '../assets/images/beer_just_beer.png';
-import wishapedia from '../assets/images/wishapedia.png';
-import art_block_to_block from '../assets/images/art_block_to_block.png';
-import Card from '.  /Card';
+import React from "react";
+import beer_just_beer from "../assets/images/beer_just_beer.png";
+import wishapedia from "../assets/images/wishapedia.png";
+import art_block_to_block from "../assets/images/art_block_to_block.png";
+import Card from "./Card";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
 
-class Carousel extends Component {
+class Carousel extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       items: [
         {
           id: 0,
-          title: 'Beer-Just-Beer',
-          subTitle: 'Viewing bars per state',
+          title: "Beer-Just-Beer",
+          subTitle: "Viewing bars per state",
           imgSrc: beer_just_beer,
-          link: 'http://beer-just-beer.surge.sh/',
+          link: "http://beer-just-beer.surge.sh/",
           selected: false
         },
 
         {
           id: 1,
-          title: 'Wishapedia',
-          subTitle: 'Creating a member wish list',
+          title: "Wishapedia",
+          subTitle: "Creating a member wish list",
           imgSrc: wishapedia,
-          link: 'http://wishapedia.surge.sh/',
+          link: "http://wishapedia.surge.sh/",
           selected: false
         },
 
         {
           id: 3,
-          title: 'Art-Block-To-Block',
-          subTitle: 'Viewing street art murials',
+          title: "Art-Block-To-Block",
+          subTitle: "Viewing street art murials",
           imgSrc: art_block_to_block,
-          link: 'http://art-block-to-block.surge.sh/',
+          link: "http://art-block-to-block.surge.sh/",
           selected: false
-        },
-
-
-        
+        }
       ]
-
-    }
+    };
   }
-
 
   handleCardClick = (id, card) => {
     let items = [...this.state.items];
@@ -58,23 +55,28 @@ class Carousel extends Component {
     this.setState({
       items
     });
+  };
 
-    makeItems = (items) => {
-      return items.map(item => {
-        return <Card item = {item} onClick={(e => this.handleCardClick(item.id, e))} key={item.id} />
-      }
-
-      )
-       
-    }
-
-  }
-
+  makeItems = items => {
+    return items.map(item => {
+      return (
+        <Card
+          item={item}
+          onClick={e => this.handleCardClick(item.id, e)}
+          key={item.id}
+        />
+      );
+    });
+  };
 
   render() {
     return (
-      <p>Carousel Works!</p>
-    )
+      <Container fluid={true}>
+        <Row className="justify-content-around">
+          {this.makeItems(this.state.items)}
+        </Row>
+      </Container>
+    );
   }
 }
 
