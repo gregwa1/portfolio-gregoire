@@ -30,7 +30,7 @@ class Carousel extends React.Component {
         },
 
         {
-          id: 3,
+          id: 2,
           title: "Art-Block-To-Block",
           subTitle: "Viewing street art murials",
           imgSrc: art_block_to_block,
@@ -62,7 +62,7 @@ class Carousel extends React.Component {
       return (
         <Card
           item={item}
-          onClick={e => this.handleCardClick(item.id, e)}
+          click={(e => this.handleCardClick(item.id, e))}
           key={item.id}
         />
       );
