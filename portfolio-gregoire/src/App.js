@@ -8,15 +8,7 @@ import "./App.css";
 import Footer from "./components/Footer";
 import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
-import ContactPage from './components/ContactPage';
 import ContactForm from './components/ContactForm';
-
-//for backEnd
-
-
-
-
-
 
 
 

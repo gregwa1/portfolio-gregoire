@@ -1,17 +1,5 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* font-family: 'Merriweather', serif;
+font-family: 'Lora', serif; */
 
 .App-header {
   background-color: #282c34;
@@ -28,11 +16,24 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#contact-form-button{
+  border-radius: 15px;
+}
+
+#contact-form{
+  display: inline-flexbox;
+
+}
+
+#contact-form-area {
+  width: 200px;
+  position: relative;
+  left: 35%;
+
+}
+
+body {
+  /* background-image: url('https://i.imgur.com/Y52e66m.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
 }

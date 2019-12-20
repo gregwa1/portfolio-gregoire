@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from 'react-bootstrap/Button';
 
 
 export default function ContactForm() {
@@ -18,7 +19,7 @@ export default function ContactForm() {
         Your message:
         <textarea name="message"></textarea>
       </label>
-    <button id="contact-form-button" type="submit" value="Send">send</button>
+    <Button className="d-inline-block" varient="primary" type="submit" value="Send">send</Button>
   </form>
     </div>
   )
