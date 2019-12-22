@@ -16,6 +16,16 @@ font-family: 'Lora', serif; */
   color: #61dafb;
 }
 
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 #contact-form-button{
   border-radius: 15px;
 }
@@ -32,8 +42,16 @@ font-family: 'Lora', serif; */
 
 }
 
-body {
-  /* background-image: url('https://i.imgur.com/Y52e66m.jpg');
+/* body {
+  background-image: url('https://i.imgur.com/Y52e66m.jpg');
   background-size: cover;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
+}  */
+
+nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-black{
+  background-color: black;
+}
+
+div.border-top.justify-content-between.p-3.row {
+  background-color: black;
 }
