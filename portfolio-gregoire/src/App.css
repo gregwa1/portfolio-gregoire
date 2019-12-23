@@ -16,7 +16,6 @@ font-family: 'Lora', serif; */
   color: #61dafb;
 }
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -26,20 +25,18 @@ font-family: 'Lora', serif; */
   }
 }
 
-#contact-form-button{
+#contact-form-button {
   border-radius: 15px;
 }
 
-#contact-form{
+#contact-form {
   display: inline-flexbox;
-
 }
 
 #contact-form-area {
   width: 200px;
   position: relative;
   left: 35%;
-
 }
 
 /* body {
@@ -48,10 +45,26 @@ font-family: 'Lora', serif; */
   background-repeat: no-repeat;
 }  */
 
-nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-black{
+nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-black {
   background-color: black;
 }
 
 div.border-top.justify-content-between.p-3.row {
   background-color: black;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: lightblue;
+  }
+
+  span.navbar-toggler-icon {
+    background-color: white;
+  }
+
+  button.border-0.navbar-toggle.collapsed {
+    background-color: white;
+  }
 }
