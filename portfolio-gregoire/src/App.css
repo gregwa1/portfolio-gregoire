@@ -45,6 +45,11 @@ font-family: 'Lora', serif; */
   background-repeat: no-repeat;
 }  */
 
+.github {
+  text-decoration: none !important;
+  color: white !important;
+}
+
 nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-black {
   background-color: black;
 }
@@ -53,11 +58,34 @@ div.border-top.justify-content-between.p-3.row {
   background-color: black;
 }
 
+div.p-0.col-md-40.col-sm-40 {
+  font-size: 3em;
+}
+
+.bg-transparent.jumbotron-fluid.p-0 {
+  background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  background-size: 1600px 900px;
+}
+
+div.justify-content-around.row {
+  background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  /* Center and scale the image nicely */
+
+  background-repeat: no-repeat;
+  background-size: 1600px 900px;
+}
+
 /* Media Query */
 
 @media only screen and (max-width: 500px) {
   body {
     background-color: lightblue;
+  }
+  div.justify-content-around.row {
+    display: flex;
   }
 
   span.navbar-toggler-icon {
