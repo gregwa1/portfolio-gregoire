@@ -19,7 +19,7 @@ class App extends React.Component {
         { title: "Home", path: "/" },
         { title: "About", path: "/about" },
         { title: "Contact", path: "/contact" },
-        { title: "Resume", path: "https://www.docdroid.net/McSZWTM/boisrond-greg-2019-resume.pdf"},
+        { title: "Resume", path: "https://docdro.id/7n7yVOF"},
       ],
       home: {
         title: "Software Engineer",
@@ -64,7 +64,7 @@ class App extends React.Component {
                 <Link className="nav-link text-light" to="/contact">
                   Contact
                 </Link>
-                <a href="https://www.docdroid.net/McSZWTM/boisrond-greg-2019-resume.pdf"
+                <a href="https://docdro.id/7n7yVOF"
                   className="nav-link text-light"
                 >
                   Resume

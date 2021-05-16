@@ -2,7 +2,7 @@
 font-family: 'Lora', serif; */
 
 .App-header {
-  background-color: #282c34;
+  background-color: #343361FF;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -51,32 +51,32 @@ font-family: 'Lora', serif; */
 }
 
 nav.border-bottom.navbar.navbar-expand-lg.navbar-light.bg-black {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 div.border-top.justify-content-between.p-3.row {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 
 div.p-0.col-md-40.col-sm-40 {
   font-size: 3em;
 }
 
-.bg-transparent.jumbotron-fluid.p-0 {
-  background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-  /* Center and scale the image nicely */
+/*.bg-transparent.jumbotron-fluid.p-0 {
+  background-image: url("https://i.imgur.com/mHY0tmH.jpeg");
+   Center and scale the image nicely 
 
   background-repeat: no-repeat;
   background-size: 1600px 900px;
-}
+} */
 
-div.justify-content-around.row {
+/*div.justify-content-around.row {
   background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
-  /* Center and scale the image nicely */
+  Center and scale the image nicely 
 
   background-repeat: no-repeat;
   background-size: 1600px 900px;
-}
+} */
 
 /* Media Query */
 
